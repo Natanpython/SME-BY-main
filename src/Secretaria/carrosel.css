@@ -1,0 +1,54 @@
+ .meu-carousel {
+    position: relative;
+    width: 700px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+
+  .meu-carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 3rem;
+  }
+
+  .meu-carousel-item {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .meu-carousel-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .meu-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .meu-carousel button:hover {
+    background: #fff;
+  }
+
+  .meu-prev {
+    left: 0;
+ 
+  }
+
+  .meu-next {
+    right: 0;
+    
+  }
