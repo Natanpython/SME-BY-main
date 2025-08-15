@@ -38,12 +38,13 @@
    align-items: center;
    justify-content: center;
    gap: 3rem;
+   z-index: 2000;
  }
 
  .menu a {
    color: var(--branco);
    text-decoration: none;
-
+ z-index: 2000;
  }
 
  .menu a:hover {
@@ -51,6 +52,7 @@
    padding: 1rem;
    border-radius: 5px;
    transition: .5s;
+   z-index: 2000;
  }
 
  .Inicio:hover {
@@ -73,7 +75,7 @@
    flex-direction: column;
    cursor: pointer;
    gap: 5px;
-   z-index: 100;
+   z-index: 2000;
  }
 
  .hamburger div {
@@ -81,18 +83,22 @@
    height: 3px;
    background-color: var(--branco);
    transition: 0.4s ease;
+   z-index: 2000;
  }
 
  .hamburger.active .bar1 {
    transform: rotate(45deg) translate(5px, 5px);
+   z-index: 2000;
  }
 
  .hamburger.active .bar2 {
    opacity: 0;
+   z-index: 2000;
  }
 
  .hamburger.active .bar3 {
    transform: rotate(-45deg) translate(5px, -5px);
+   z-index: 2000;
  }
 
  @media (max-width: 768px) {

@@ -22,3 +22,11 @@ const meuTrack = document.querySelector('.meu-carousel-track');
     }
     meuTrack.style.transform = `translateX(${meuPosition}px)`;
   });
+
+   function toggleMenu() {
+      const menu = document.getElementById('menu');
+      const hamburger = document.getElementById('hamburger');
+
+      menu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
